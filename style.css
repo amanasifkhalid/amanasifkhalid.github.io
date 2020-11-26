@@ -1,0 +1,19 @@
+body {
+    background-image: linear-gradient(rgba(0,0,0,.2),rgba(0,0,0,.2)),url("background.gif");
+    background-size: cover;
+    background-attachment: fixed;
+    backdrop-filter: blur(5px);
+    color: #fff;
+}
+
+.header {
+    text-align: right;
+    padding-right: 5vw;
+    padding-top: 5vh;
+    width: 100vw;
+    height: 100vh;
+}
+
+.header h1 {
+    font-size: 25vmin;
+}
