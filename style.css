@@ -1,3 +1,7 @@
+html {
+    scroll-behavior: smooth;
+}
+
 #backgroundWrap {
     z-index: -1;
     position: fixed;
@@ -5,7 +9,7 @@
     left: 0;
     height: 100%;
     width: 100%;
-    background-image: linear-gradient(rgba(0,0,0,.2),rgba(0,0,0,.2)),url("background.gif");
+    background-image: linear-gradient(rgba(0,0,0,.2),rgba(0,0,0,.2)),url("public/background.gif");
     background-size: cover;
 }
 
@@ -78,6 +82,21 @@ sub {
     height: 100vh;
 }
 
+.nav-down {
+    text-align: center;
+    padding: 5vh;
+    font-size: 10vmin;
+}
+
+.nav-down a {
+    text-decoration: none;
+    color: #dad9d4;
+}
+
+.nav-down a:hover {
+    color: white;
+}
+
 #header h1 {
     font-size: 25vmin;
 }
@@ -115,6 +134,10 @@ sub {
 
 .card p {
     font-size: medium;
+}
+
+.card-img-top {
+    filter: brightness(90%);
 }
 
 #emailLink {
