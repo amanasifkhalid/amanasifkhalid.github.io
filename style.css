@@ -89,8 +89,16 @@ sub {
     height: 100vh;
 }
 
-.section p {
+.section h5, p {
     font-size: 5vmin;
+}
+
+.card {
+    background-color: transparent;
+}
+
+.card p {
+    font-size: medium;
 }
 
 #emailLink {
@@ -101,7 +109,7 @@ sub {
     color: #2a92ee;
 }
 
-#githubLink {
+#githubLink, #videoLink {
     color: #e24763;
 }
 
@@ -125,4 +133,16 @@ sub {
 #contact .line {
     margin-right: auto;
     margin-left: 0;
+}
+
+@media (max-width: 1200px) {
+    .card-columns {
+        column-count: 2;
+    }
+}
+
+@media (max-width: 800px) {
+    .card-columns {
+        column-count: 1;
+    }
 }
