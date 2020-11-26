@@ -96,6 +96,15 @@ sub {
     height: 100vh;
 }
 
+#projects {
+    height: auto;
+}
+
+.btn {
+    margin-right: 5px;
+    margin-bottom: 10px;
+}
+
 .section h5, p {
     font-size: 5vmin;
 }
@@ -116,8 +125,12 @@ sub {
     color: #2a92ee;
 }
 
-#githubLink, #videoLink {
+#githubLink, p a {
     color: #e24763;
+}
+
+p a:hover {
+    color: #d14e95;
 }
 
 .section-title {
