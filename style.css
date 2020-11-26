@@ -6,6 +6,15 @@ body {
     color: white;
 }
 
+b {
+    color: #FFCB05;
+    font-weight: normal;
+}
+
+sub {
+    font-size: 2vmin;
+}
+
 #sidebar {
     height: 100%;
     width: 0;
@@ -75,10 +84,45 @@ body {
     font-size: 8vmin;
 }
 
-#line {
+.section {
+    padding: 5vh 5vw;
+    height: 100vh;
+}
+
+.section p {
+    font-size: 5vmin;
+}
+
+#emailLink {
+    color: #FFCB05;
+}
+
+#linkedinLink {
+    color: #2a92ee;
+}
+
+#githubLink {
+    color: #e24763;
+}
+
+.section-title {
+    font-size: 10vmin;
+    text-align: right;
+    padding-bottom: 5vh;
+}
+
+.line {
     display: block;
     width: 75vmin;
+    border-top: 1px solid white;
+}
+
+#header .line {
     margin-left: auto;
     margin-right: 0;
-    border-top: 1px solid white;
- }
+}
+
+#contact .line {
+    margin-right: auto;
+    margin-left: 0;
+}

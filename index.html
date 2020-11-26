@@ -11,24 +11,45 @@
         <a href="javascript:void(0)" id="openbtn" onclick="openNav()">&#60;</a>
         <div id="sidebar">
             <a href="javascript:void(0)" id="closebtn" onclick="closeNav()">X</a>
-            <a href="#">Welcome</a>
-            <a href="#">About</a>
-            <a href="#">Projects</a>
-            <a href="#">Potpourri</a>
-            <a href="#">Contact</a>
+            <a href="#" onclick="closeNav()">Welcome</a>
+            <a href="#about" onclick="closeNav()">About</a>
+            <a href="#projects" onclick="closeNav()">Projects</a>
+            <a href="#other" onclick="closeNav()">Potpourri</a>
+            <a href="#contact" onclick="closeNav()">Contact</a>
         </div>
         <div id="header">
             <h1>Aman</h1>
             <h1>Khalid</h1>
-            <span id="line"></span>
+            <span class="line"></span>
             <h2 id="subtitle">CS Student @ Umich</h2>
         </div>
-        <div>
+        <div class="section" id="about">
+            <h3 class="section-title">Pleased to meet you.</h3>
+            <p>
+                My name is Aman. I am a student at the <b>University of Michigan</b> studying
+                computer science and information with a focus on UX design.
+            </p>
+            <p>
 
+            </p>
         </div>  
+        <div class="section" id="projects">
+            <h3 class="section-title">Projects & Prior Experiences</h3>
+        </div>
+        <div class="section" id="other">
+            <h3 class="section-title">Potpourri</h3>
+        </div>
+        <div class="section" id="contact">
+            <h3 class="section-title">Contact<sub>and maybe hire</sub> Me</h3>
+            <p>Email: <a id="emailLink" href="mailto:aakhalid@umich.edu">aakhalid@umich.edu</a></p>
+            <p>LinkedIn: <a id="linkedinLink" href="http://linkedin.com/in/aman-khalid">linkedin.com/in/aman-khalid</a></p>
+            <p>GitHub: <a id="githubLink" href="http://github.com/amanasifkhalid">github.com/amanasifkhalid</a></p>
+            <p><span class="line"></span></p>
+            <p><a href="khalid_resume.pdf" target="_blank" class="btn btn-outline-light" role="button">VIEW MY RESUME</a></p>
+        </div>
         <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
         <script>
-            var subtitles = ["Violinist", "Lover of Linux", "Hilary Hahn Fanatic", "FOSS Advocate", "Aspiring SWE", "Will Work for Coffee", "CS Student @ Umich"];
+            var subtitles = ["Violinist", "Linux User", "Hilary Hahn Fanatic", "FOSS Advocate", "Aspiring SWE", "Will Work for Coffee", "CS Student @ Umich"];
             var index = 0;
             var subtitle = document.getElementById("subtitle");
 
