@@ -1,8 +1,16 @@
-body {
+#backgroundWrap {
+    z-index: -1;
+    position: fixed;
+    top: 0;
+    left: 0;
+    height: 100%;
+    width: 100%;
     background-image: linear-gradient(rgba(0,0,0,.2),rgba(0,0,0,.2)),url("background.gif");
     background-size: cover;
     background-attachment: fixed;
-    backdrop-filter: blur(5px);
+}
+
+body {
     color: white;
 }
 

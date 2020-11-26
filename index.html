@@ -8,6 +8,7 @@
         <title>Welcome | Aman Khalid</title>
     </head>
     <body>
+        <div id="backgroundWrap"></div>
         <a href="javascript:void(0)" id="openbtn" onclick="openNav()">&#60;</a>
         <div id="sidebar">
             <a href="javascript:void(0)" id="closebtn" onclick="closeNav()">X</a>
@@ -62,6 +63,7 @@
                         <h4 class="card-title">...this website</h4>
                     </div>
                     <div class="card-footer">
+                        <a href="#" onclick="increment()" class="btn btn-outline-light" role="button">VIEW WEBSITE</a>
                         <a href="https://github.com/amanasifkhalid/amanasifkhalid.github.io" target="_blank" class="btn btn-outline-light" role="button">VIEW ON GITHUB</a>
                     </div>
                 </div>
@@ -81,7 +83,7 @@
         </div>
         <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
         <script>
-            var subtitles = ["Violinist", "Linux User", "Hilary Hahn Fanatic", "FOSS Advocate", "Aspiring SWE", "Will Work for Coffee", "CS Student @ Umich"];
+            var subtitles = ["Violinist", "Linux Cultist", "Hilary Hahn Fanatic", "FOSS Advocate", "Aspiring SWE", "Will Work for Coffee", "CS Student @ Umich"];
             var index = 0;
             var subtitle = document.getElementById("subtitle");
 
@@ -113,6 +115,16 @@
         <script>
             function closeNav() {
                 document.getElementById("sidebar").style.width = "0";
+            }
+        </script>
+        <script>
+            var counter = 0;
+            function increment() {
+                ++counter;
+                if (counter === 3) {
+                    counter = 0;
+                    alert("Error in compiler: java.lang.StackOverflowError\n\n...just kidding, but be careful with your zealous use of recursion!");
+                }
             }
         </script>
     </body>
