@@ -8,20 +8,31 @@
         <title>Welcome | Aman Khalid</title>
     </head>
     <body>
-        <div class="bg-image"></div>
-        <div class="header">
+        <a href="javascript:void(0)" id="openbtn" onclick="openNav()">&#60;</a>
+        <div id="sidebar">
+            <a href="javascript:void(0)" id="closebtn" onclick="closeNav()">X</a>
+            <a href="#">Welcome</a>
+            <a href="#">About</a>
+            <a href="#">Projects</a>
+            <a href="#">Potpourri</a>
+            <a href="#">Contact</a>
+        </div>
+        <div id="header">
             <h1>Aman</h1>
             <h1>Khalid</h1>
             <span id="line"></span>
             <h2 id="subtitle">CS Student @ Umich</h2>
         </div>
+        <div>
+
+        </div>  
         <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
         <script>
-            var subtitles = ["Violinist", "Lover of Coffee", "CS Student @ Umich"];
+            var subtitles = ["Violinist", "Lover of Linux", "Hilary Hahn Fanatic", "FOSS Advocate", "Aspiring SWE", "Will Work for Coffee", "CS Student @ Umich"];
             var index = 0;
             var subtitle = document.getElementById("subtitle");
 
-            setInterval(change, 3000);
+            setInterval(change, 4000);
 
             function change() {
                 $(subtitle).fadeOut('fast', function() {
@@ -32,6 +43,23 @@
 
                     $(subtitle).fadeIn('fast');
                 });
+            }
+        </script>
+        <script>
+            function openNav() {
+                var sidebar = document.getElementById("sidebar");
+                if (screen.width < 1000) {
+                    sidebar.style.textAlign = "center";
+                    sidebar.style.width = "100%";
+                } else {
+                    sidebar.style.textAlign = "right";
+                    sidebar.style.width = "20vw";
+                }
+            }
+        </script>
+        <script>
+            function closeNav() {
+                document.getElementById("sidebar").style.width = "0";
             }
         </script>
     </body>
